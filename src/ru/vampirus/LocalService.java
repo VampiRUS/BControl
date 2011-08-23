@@ -40,6 +40,7 @@ public class LocalService extends Service{
         mIntentFilter.addAction(WifiManager.WIFI_STATE_CHANGED_ACTION);
         registerReceiver(mWifiReceiver,mIntentFilter);
         //mainWifi.startScan();
+        Log.e(TAG, "local service started");
         Toast.makeText(this, "Service started", Toast.LENGTH_SHORT).show();
     }
 	
@@ -67,7 +68,8 @@ public class LocalService extends Service{
 	        private void handleNetworkStateChanged(NetworkInfo info) {
 	        	Log.d(TAG,"WifiReceiver.handleNetworkStateChanged: NetworkInfo: "
 	                        + info);
-	            
+	        	Log.d(TAG,"WifiReceiver.handleNetworkStateChanged: connection stat: "
+                        + info.getState());
 	            switch (info.getState()) {
 	                case CONNECTED:
 	                    WifiInfo wifiInfo = mainWifi.getConnectionInfo();
