@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Control the brightness with wifi</string>
+    <string name="app_name">Brightness Control</string>
+    <string name="start_service">Start Service</string>
+    <string name="stop_service">Stop Service</string>
+    <string name="preference">Preference</string>
+    <string name="title_onstartup_preference">Run on startup</string>
+    <string name="summary_off_onstartup_preference">Off</string>
+    <string name="summary_on_onstartup_preference">On</string>
+    <string name="title_ssid_preference">SSID</string>
+    <string name="set_access_point_name">Please set access point SSID</string>
+    <string name="service_started">Service started</string>
+    <string name="service_stopped">Service stopped</string>
+    <string name="title_delay_ms_preference">Delay</string>
+    <string name="summary_delay_ms_preference">Delay before WIFI check in millisecond</string>
+    <string name="dialog_delay_ms_preference">Select delay</string>
+</resources>

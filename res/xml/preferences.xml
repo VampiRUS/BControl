@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+    	android:key="ssid_preference"
+    	android:title="@string/title_ssid_preference"
+    />
+
+    <CheckBoxPreference
+            android:key="startup_preference"
+            android:title="@string/title_onstartup_preference"
+            android:summaryOn="@string/summary_on_onstartup_preference" 
+            android:summaryOff="@string/summary_off_onstartup_preference" />
+     
+     <ListPreference
+                android:key="delay_ms"
+                android:title="@string/title_delay_ms_preference"
+                android:summary="@string/summary_delay_ms_preference"
+                android:entries="@array/entries_delay_ms_preference"
+                android:entryValues="@array/entryvalues_delay_ms_preference"
+                android:dialogTitle="@string/dialog_delay_ms_preference" />
+
+</PreferenceScreen>
